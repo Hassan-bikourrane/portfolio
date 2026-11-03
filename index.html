@@ -1,0 +1,688 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Hassan's portfolio — Graphic Designer and Web Developer">
+
+    <title>Hassan | Graphic Designer & Web Developer</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700&family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Prevent theme flash -->
+    <script>
+        try {
+            document.documentElement.dataset.theme =
+                localStorage.getItem("portfolio-theme") || "dark";
+        } catch (error) {
+            document.documentElement.dataset.theme = "dark";
+        }
+    </script>
+</head>
+
+<body>
+
+    <a href="#main" class="skip-link">Skip to content</a>
+
+    <!-- HEADER -->
+    <header class="site-header">
+        <nav class="navbar container" aria-label="Main navigation">
+
+            <a href="#home" class="logo">H<span>.</span></a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                aria-label="Open menu"
+                aria-controls="nav-links"
+                aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+
+            <ul class="nav-links" id="nav-links">
+                <li><a href="#home" class="nav-link active" data-i18n="navHome">Home</a></li>
+                <li><a href="#about" class="nav-link" data-i18n="navAbout">About</a></li>
+                <li><a href="#skills" class="nav-link" data-i18n="navSkills">Skills</a></li>
+                <li><a href="#experience" class="nav-link" data-i18n="navExperience">Experience</a></li>
+                <li><a href="#projects" class="nav-link" data-i18n="navProjects">Projects</a></li>
+                <li><a href="#contact" class="nav-link" data-i18n="navContact">Contact</a></li>
+            </ul>
+
+            <div class="header-actions">
+
+                <label class="language-switcher">
+                    <i class="fa-solid fa-globe"></i>
+                    <select id="language-select" aria-label="Choose language">
+                        <option value="en">EN</option>
+                        <option value="fr">FR</option>
+                        <option value="ar">AR</option>
+                    </select>
+                </label>
+
+                <button class="theme-toggle" id="theme-toggle"
+                    type="button"
+                    aria-label="Switch to light mode"
+                    aria-pressed="false">
+                    <i class="fa-solid fa-moon"></i>
+                </button>
+
+            </div>
+        </nav>
+    </header>
+
+
+    <main id="main">
+
+        <!-- HERO -->
+        <section class="hero section-padding" id="home">
+
+            <div class="hero-container container">
+
+                <div class="hero-content">
+
+                    <p class="eyebrow" data-i18n="heroEyebrow">
+                        DESIGN MEETS TECHNOLOGY
+                    </p>
+
+                    <h1>
+                        <span data-i18n="heroGreeting">Hello, I'm</span>
+                        <span class="hero-name">Hassan.</span>
+                    </h1>
+
+                    <h2 data-i18n="heroTitle">
+                        Graphic Designer & Web Developer
+                    </h2>
+
+                    <p class="hero-description" data-i18n="heroDescription">
+                        I create visual identities and digital experiences by combining creative design with modern web technologies.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
+                            <span data-i18n="heroButton">Explore my work</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                        <a href="#contact" class="btn btn-outline" data-i18n="contactButton">
+                            Get in touch
+                        </a>
+                    </div>
+
+                    
+<div class="social-links">
+
+        <a href="https://www.behance.net/hassanbikourr"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="Behance">
+            <i class="fa-brands fa-behance"></i>
+        </a>
+
+        <a href="https://www.linkedin.com/in/hassan-bikourrane"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in"></i>
+        </a>
+
+        <a href="https://github.com/Hassan-bikourrane"
+           target="_blank"
+           rel="noopener noreferrer"
+           aria-label="GitHub">
+            <i class="fa-brands fa-github"></i>
+        </a>
+
+</div>
+
+
+                </div>
+
+                <div class="hero-visual">
+
+                    <div class="hero-frame">
+                        
+                        <div class="hero-image-placeholder">
+                            <img src="4c7893b1-1c5b-446a-b2e7-ae785000e271.jpg" alt="Hassan's photo" class="hero-image">
+                            
+                        </div>
+                    </div>
+
+                    <div class="floating-card design-card">
+                        <i class="fa-solid fa-pen-nib"></i>
+                        <span data-i18n="designLabel">Creative Design</span>
+                    </div>
+
+                    <div class="floating-card code-card">
+                        <i class="fa-solid fa-code"></i>
+                        <span data-i18n="codeLabel">Web Development</span>
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+
+        <!-- ABOUT -->
+        <section class="about section-padding" id="about">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow" data-i18n="aboutEyebrow">GET TO KNOW ME</p>
+                    <h2 data-i18n="aboutTitle">About Me</h2>
+                    <span class="heading-line"></span>
+                </div>
+
+                <div class="about-content">
+
+                    <div class="about-decoration">
+                        <i class="fa-solid fa-shapes"></i>
+                        <span data-i18n="aboutDecoration">Creativity in every detail.</span>
+                    </div>
+
+                    <div class="about-text">
+
+                        <h3 data-i18n="aboutSubtitle">
+                            Designing ideas. Building experiences.
+                        </h3>
+
+                        <p data-i18n="aboutParagraph1">
+                            I'm a graphic design student with an interest in visual communication, digital design and web development.
+                        </p>
+
+                        <p data-i18n="aboutParagraph2">
+                            My work combines creativity, attention to detail and a growing understanding of front-end technologies. I enjoy transforming ideas into clear and engaging visual experiences.
+                        </p>
+
+                        <a href="#contact" class="text-link">
+                            <span data-i18n="aboutLink">Let's work together</span>
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </a>
+
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- SKILLS -->
+        <section class="skills section-padding" id="skills">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow" data-i18n="skillsEyebrow">WHAT I DO</p>
+                    <h2 data-i18n="skillsTitle">My Skills</h2>
+                    <span class="heading-line"></span>
+                </div>
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h3 data-i18n="skillGraphic">Graphic Design</h3>
+                        <p data-i18n="skillGraphicDesc">
+                            Visual identity, posters, layouts and print design.
+                        </p>
+                        <div class="skill-tags">
+                            <span>Illustrator</span>
+                            <span>Photoshop</span>
+                            <span>InDesign</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-object-group"></i>
+                        </div>
+                        <h3 data-i18n="skillUI">UI / UX Design</h3>
+                        <p data-i18n="skillUIDesc">
+                            User interfaces, wireframes and digital experiences.
+                        </p>
+                        <div class="skill-tags">
+                            <span>Figma</span>
+                            <span>Wireframing</span>
+                            <span>Prototyping</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-code"></i>
+                        </div>
+                        <h3 data-i18n="skillFrontend">Front-End Development</h3>
+                        <p data-i18n="skillFrontendDesc">
+                            Building responsive and interactive websites.
+                        </p>
+                        <div class="skill-tags">
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+                        <h3 data-i18n="skillBackend">Back-End Development</h3>
+                        <p data-i18n="skillBackendDesc">
+                            Learning server-side development and database management.
+                        </p>
+                        <div class="skill-tags">
+                            <span>Node.js</span>
+                            <span>Express</span>
+                            <span>MongoDB</span>
+                        </div>
+                    </article>
+
+                    <article class="skill-card">
+                        <div class="skill-icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <h3 data-i18n="skillCreative">Creative Thinking</h3>
+                        <p data-i18n="skillCreativeDesc">
+                            Concept development, problem solving and visual research.
+                        </p>
+                        <div class="skill-tags">
+                            <span>Research</span>
+                            <span>Concepts</span>
+                            <span>Creativity</span>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- TECHNOLOGY MARQUEE -->
+        <section class="tech-marquee" aria-label="Technologies and software">
+
+            <div class="marquee-track">
+
+                <div class="marquee-content">
+
+                    <div class="tech-item">
+                        <img src="adobe-illustrator-svgrepo-com.png" alt="">
+                        <span>Illustrator</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="adobe-photoshop-svgrepo-com.png" alt="">
+                        <span>Photoshop</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="indesign-svgrepo-com.png" alt="">
+                        <span>InDesign</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="html-5-svgrepo-com.png" alt="">
+                        <span>HTML5</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="css-3-svgrepo-com.png" alt="">
+                        <span>CSS3</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="javascript.png" alt="">
+                        <span>JavaScript</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="react-javascript-js-framework-facebook-svgrepo-com.png" alt="">
+                        <span>React</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="nodejs-icon-svgrepo-com.png" alt="">
+                        <span>Node.js</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="express.png" alt="" class="icon-invert">
+                        <span>Express.js</span>
+                    </div>
+
+                    <div class="tech-item">
+                        <img src="mongodb.png" alt="">
+                        <span>MongoDB</span>
+                    </div>
+
+                </div>
+
+                <!-- Duplicate for seamless animation -->
+                <div class="marquee-content" aria-hidden="true">
+
+                    <div class="tech-item"><img src="adobe-illustrator-svgrepo-com.png" alt=""><span>Illustrator</span></div>
+                    <div class="tech-item"><img src="adobe-photoshop-svgrepo-com.png" alt=""><span>Photoshop</span></div>
+                    <div class="tech-item"><img src="indesign-svgrepo-com.png" alt=""><span>InDesign</span></div>
+                    <div class="tech-item"><img src="html-5-svgrepo-com.png" alt=""><span>HTML5</span></div>
+                    <div class="tech-item"><img src="css-3-svgrepo-com.png" alt=""><span>CSS3</span></div>
+                    <div class="tech-item"><img src="javascript.png" alt=""><span>JavaScript</span></div>
+                    <div class="tech-item"><img src="react-javascript-js-framework-facebook-svgrepo-com.png" alt=""><span>React</span></div>
+                    <div class="tech-item"><img src="nodejs-icon-svgrepo-com.png" alt=""><span>Node.js</span></div>
+                    <div class="tech-item"><img src="express.png" alt="" class="icon-invert"><span>Express.js</span></div>
+                    <div class="tech-item"><img src="mongodb.png" alt=""><span>MongoDB</span></div>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- EXPERIENCE -->
+        <section class="experience section-padding" id="experience">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow" data-i18n="experienceEyebrow">MY JOURNEY</p>
+                    <h2 data-i18n="experienceTitle">Education & Experience</h2>
+                    <span class="heading-line"></span>
+                </div>
+
+                <div class="timeline">
+
+                    <article class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-graduation-cap"></i>
+                        </div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">2024 – 2026</span>
+                            <h3 data-i18n="educationTitle">DTS in Infographie</h3>
+                            <h4>OFPPT – ISAG Derb Sultan</h4>
+                            <p data-i18n="educationDesc">
+                                Training in graphic design, visual communication and professional design software.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-briefcase"></i>
+                        </div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">2025 – 2026</span>
+                            <h3 data-i18n="internshipTitle">Graphic Design Internships</h3>
+                            <h4 data-i18n="internshipPlace">Graphics & SebraPress</h4>
+                            <p data-i18n="internshipDesc">
+                                Worked on posters, flyers, business cards, large-format printing and print preparation.
+                            </p>
+                        </div>
+                    </article>
+
+                    <article class="timeline-item">
+                        <div class="timeline-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <div class="timeline-content">
+                            <span class="timeline-date">2026</span>
+                            <h3 data-i18n="webTrainingTitle">Full-Stack Web Development</h3>
+                            <h4 data-i18n="webTrainingPlace">MERN Stack Training</h4>
+                            <p data-i18n="webTrainingDesc">
+                                Learning modern web development with HTML, CSS, JavaScript, Node.js, Express and MongoDB.
+                            </p>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+        <!-- PROJECTS -->
+        <section class="projects section-padding" id="projects">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="eyebrow" data-i18n="projectsEyebrow">SELECTED WORK</p>
+                    <h2 data-i18n="projectsTitle">Featured Projects</h2>
+                    <span class="heading-line"></span>
+                </div>
+
+                <div class="projects-grid">
+
+                    <article class="project-card">
+                        <div class="project-image project-image-one">
+                            <img src="logo.jpg" alt="Peak & Wave Adventures logo" class="project-logo" loading="lazy">
+                            <span class="project-number">01</span>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category" data-i18n="projectCategory1">BRANDING & EDITORIAL</span>
+                            <h3>Peak & Wave Adventures</h3>
+                            <p data-i18n="projectDesc1">
+                                A visual identity and editorial project inspired by Moroccan nature and adventure.
+                            </p>
+                            <a href="https://www.behance.net/gallery/257941267/visual-identity-peak-and-wave" class="project-link">
+                                <span data-i18n="projectLink">View project</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image project-image-two">
+                            <div class="poster-book" id="poster-book" aria-roledescription="carousel" aria-label="Poster collection">
+                                <figure class="poster-page"><img src="dexter.jpg" alt="Dexter poster" loading="lazy"></figure>
+                                <figure class="poster-page"><img src="sprite.jpg" alt="Sprite poster: Refresh your mind" loading="lazy"></figure>
+                                <figure class="poster-page"><img src="81080e64-3d69-4ed2-91cb-19c75ac4d5fe.jpg" alt="Kanye West poster" loading="lazy"></figure>
+                                <figure class="poster-page"><img src="poster.jpg" alt="Peak &amp; Wave app poster" loading="lazy"></figure>
+                            </div>
+                            <div class="poster-controls">
+                                <button type="button" class="poster-btn" id="poster-prev" aria-label="Previous poster"><i class="fa-solid fa-chevron-left"></i></button>
+                                <span class="poster-counter" id="poster-counter" aria-live="polite">1 / 4</span>
+                                <button type="button" class="poster-btn" id="poster-next" aria-label="Next poster"><i class="fa-solid fa-chevron-right"></i></button>
+                            </div>
+                            <span class="project-number">02</span>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category" data-i18n="projectCategory2">GRAPHIC DESIGN</span>
+                            <h3 data-i18n="projectTitle2">Poster & Print Design</h3>
+                            <p data-i18n="projectDesc2">
+                                A collection of visual compositions, posters and promotional designs.
+                            </p>
+                            <a href="https://www.behance.net/gallery/257940283/poster" class="project-link" target="_blank">
+                                <span data-i18n="projectLink">View project</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="project-card">
+                        <div class="project-image project-image-three">
+                            <i class="fa-solid fa-window-maximize"></i>
+                            <span class="project-number">03</span>
+                        </div>
+                        <div class="project-info">
+                            <span class="project-category" data-i18n="projectCategory3">WEB DESIGN</span>
+                            <h3 data-i18n="projectTitle3">Portfolio Website</h3>
+                            <p data-i18n="projectDesc3">
+                                A responsive personal portfolio combining design and front-end development.
+                            </p>
+                            <a href="#" class="project-link">
+                                <span data-i18n="projectLink">View project</span>
+                                <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+
+      
+<!-- CONTACT -->
+<section class="contact section-padding" id="contact">
+    <div class="container">
+
+        <div class="section-heading">
+            <p class="eyebrow" data-i18n="contactEyebrow">LET'S CONNECT</p>
+            <h2 data-i18n="contactTitle">Get In Touch</h2>
+            <span class="heading-line"></span>
+        </div>
+
+        <div class="contact-content">
+
+            <div class="contact-text">
+
+                <h3 data-i18n="contactSubtitle">Have a project in mind?</h3>
+
+                <p data-i18n="contactDescription">
+                    Whether it's a design project, a website or simply an idea,
+                    feel free to contact me.
+                </p>
+
+                <!-- Location -->
+                <div class="contact-detail">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <span data-i18n="location">Casablanca, Morocco</span>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="contact-detail">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                    <div>
+                        <strong>LinkedIn</strong>
+                        <a href="https://www.linkedin.com/in/hassan-bikourrane"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            linkedin.com/in/hassan-bikourrane
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Behance -->
+                <div class="contact-detail">
+                    <i class="fa-brands fa-behance"></i>
+                    <div>
+                        <strong>Behance</strong>
+                        <a href="https://www.behance.net/hassanbikourr"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            behance.net/hassanbikourr
+                        </a>
+                    </div>
+                </div>
+
+                <!-- GitHub -->
+                <div class="contact-detail">
+                    <i class="fa-brands fa-github"></i>
+                    <div>
+                        <strong>GitHub</strong>
+                        <a href="https://github.com/Hassan-bikourrane"
+                           target="_blank"
+                           rel="noopener noreferrer">
+                            github.com/Hassan-bikourrane
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Email -->
+                <div class="contact-detail">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <a href="mailto:hassanbikourrane.hb@gmail.com">
+                            hassanbikourrane.hb@gmail.com
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+
+            <!-- Contact Form -->
+            <form class="contact-form" id="contact-form">
+
+                <label for="name" data-i18n="formName">Your name</label>
+
+                <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    placeholder="Enter your name"
+                    data-i18n-placeholder="namePlaceholder"
+                    required
+                >
+
+                <label for="email" data-i18n="formEmail">Your email</label>
+
+                <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    data-i18n-placeholder="emailPlaceholder"
+                    required
+                >
+
+                <label for="message" data-i18n="formMessage">Your message</label>
+
+                <textarea
+                    id="message"
+                    name="message"
+                    rows="5"
+                    placeholder="Write your message..."
+                    data-i18n-placeholder="messagePlaceholder"
+                    required
+                ></textarea>
+
+                <button type="submit" class="btn btn-primary">
+                    <span data-i18n="sendButton">Send Message</span>
+                    <i class="fa-solid fa-paper-plane"></i>
+                </button>
+
+                <p class="form-note" data-i18n="formNote">
+                    This form opens your email application to send the message.
+                </p>
+
+            </form>
+
+        </div>
+    </div>
+</section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+        <div class="footer-content container">
+
+            <a href="#home" class="logo footer-logo">H<span>.</span></a>
+
+            <p>
+                <span data-i18n="footerText">Designed with creativity and built with code.</span>
+                © <span id="year"></span>.
+                <span data-i18n="rights">All rights reserved.</span>
+            </p>
+
+        </div>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="script.js"></script>
+
+</body>
+</html>
